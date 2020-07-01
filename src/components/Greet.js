@@ -4,6 +4,8 @@ import React from 'react';
 //     return <h1>Hello Nilank</h1>
 // }
 
-const Greet = () => <h1>Hello Nilank</h1>
+// const Greet = () => <h1>Hello Nilank</h1>
 
-export default Greet;
+// this is termed as named export
+export const Greet = () => <h1>Hello Nilank</h1>
+// export default Greet;
