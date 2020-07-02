@@ -9,7 +9,9 @@ const Greet = (props) => {
     console.log("props",props);
     return( 
         <div>
-            <h1>Hello {props.name} {props.heroname}</h1>
+            <h1>
+                Hello {props.name} {props.heroname}
+            </h1>
             {props.children}
         </div>
     )
