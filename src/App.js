@@ -7,12 +7,15 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
 
 function App() {
 
 
   return (
     <div className="App">
+      <FunctionClick />
+      
       {/* <Counter /> */}
 
       {/* <Message /> */}
@@ -25,9 +28,9 @@ function App() {
       </Greet>
       
       <Greet name="Diana" heroname="Wonder Woman"/> */}
-      <Welcome name="Bruce" heroname="Batman" />
+      {/* <Welcome name="Bruce" heroname="Batman" />
       <Welcome name="Clark" heroname="Superman" />
-      <Welcome name="Diana" heroname="Wonder Woman" />
+      <Welcome name="Diana" heroname="Wonder Woman" /> */}
 
       {/* <Hello /> */}
     </div>
