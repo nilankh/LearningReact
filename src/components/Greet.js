@@ -23,17 +23,17 @@ import React from 'react';
 
 
 // destructiing in functional component
-// const Greet = ({name, heroname}) => {
+const Greet = ({name, heroname}) => {
     
-//     return( 
-//         <div>
-//             <h1>
-//                 Hello {name} {heroname}
-//             </h1>
+    return( 
+        <div>
+            <h1>
+                Hello {name} {heroname}
+            </h1>
            
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
 // this is termed as named export
 // export const Greet = () => <h1>Hello Nilank</h1>
