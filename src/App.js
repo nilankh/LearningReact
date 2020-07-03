@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
 
       {/* <Message /> */}
-      {/* <Greet name="Bruce" heroname="Batman"/> */}
+      <Greet name="Bruce" heroname="Batman"/>
       {/* <Greet name="Bruce" heroname="Batman">
         <p>This is children props</p>
       </Greet>
