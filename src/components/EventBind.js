@@ -7,15 +7,23 @@ class EventBind extends Component {
         this.state = {
              message:"Hello"
         }
-        // 3rd way of binding 
-        this.clickHandler = this.clickHandler.bind(this);
+        // 3rd way of binding in class contructor
+        // this.clickHandler = this.clickHandler.bind(this);
     }
-    clickHandler() {
+    // clickHandler() {
+    //     this.setState({
+    //         message: 'Goodbye!'
+    //     })
+    //     console.log("this", this);
+    //     // this keyword within our event handler is undefined and thaty event binding is necessary in react class components 
+    // }
+
+
+    // final and 4approach is to use an arrow function as a class property basically change the way you define your method in the class
+    clickHandler = () => {
         this.setState({
-            message: 'Goodbye!'
+            message: 'Nikal pehli fursat me nikal jarurt ni h is desh ko teri'
         })
-        console.log("this", this);
-        // this keyword within our event handler is undefined and thaty event binding is necessary in react class components 
     }
     render() {
         
@@ -28,11 +36,11 @@ class EventBind extends Component {
                 {/* approach2 using arrow function in rendered method*/}
                 {/* <button onClick={()=> this.clickHandler()} >Click</button> */}
 
-                {/* 3rd approach binding in constructor */}
+                {/* 3rd approach binding in class constructor */}
                 <button onClick={this.clickHandler} >Click</button>
             </div>
         )
     }
 }
-// second method is to use arrow function in render method
+
 export default EventBind
