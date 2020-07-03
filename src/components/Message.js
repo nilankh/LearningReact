@@ -17,6 +17,8 @@ class Message extends Component {
         }
     }
     changeMessage() {
+        // when we have to change state of component we need to use setState
+        
         this.setState({
             message:'Thank you for subscribing'
         })
