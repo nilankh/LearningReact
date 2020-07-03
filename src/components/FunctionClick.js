@@ -10,9 +10,10 @@ function FunctionClick() {
     }
     return (
         <div>
+            {/* clickhandler we want handler to be a function and not a function call clickHandler() w  */}
           <button onClick={clickHandler}>Click</button>      
         </div>
     )
 }
-
+// eventHandler is a function and not a function call do not add parenthesis
 export default FunctionClick
