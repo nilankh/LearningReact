@@ -1,4 +1,6 @@
 import React from 'react';
+// Functional component
+
 
 // function Greet() {
 //     return <h1>Hello Nilank</h1>
@@ -7,7 +9,7 @@ import React from 'react';
 // this props we can name it anything we want to, but conventional is to write props
 const Greet = (props) => {
     console.log("props",props);
-    // props.name = 'Neel'
+    //  props.name = 'Neel'
     // we can assign anything to props because props are immutuable
     return( 
         <div>
