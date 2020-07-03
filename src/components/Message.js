@@ -16,17 +16,29 @@ class Message extends Component {
 
         }
     }
-
+    changeMessage() {
+        this.setState({
+            message:'Thank you for subscribing'
+        })
+        // this methods accepts an object which is nothing but new state of the component in the new state all we need is the message to ty for subsribimg
+    }
 
     render() {
     return (
-        <h1>
-            {/* Welcome Visitor */}
-            {/* second step is to bind this state vaue in render function adn we do this very similar to props */}
-            {this.state.message}
-        </h1>
+        <div>
+            <h1>
+                {/* Welcome Visitor */}
+                {/* second step is to bind this state vaue in render function adn we do this very similar to props */}
+                {this.state.message}
+
+            </h1>
+            {/* steps3 at HTML element for a button element */}
+                <button onClick= {() => this.changeMessage()} >Subscribe</button>
+
+        </div>
+        
     )
     }
 }
-
+// A state is nothing but an object that is privately mainted inside a component, a state can influence whast is rendered in browser and state can be changed within the component
 export default Message;
