@@ -7,6 +7,8 @@ class EventBind extends Component {
         this.state = {
              message:"Hello"
         }
+        // 3rd way of binding 
+        this.clickHandler = this.clickHandler.bind(this);
     }
     clickHandler() {
         this.setState({
@@ -23,8 +25,11 @@ class EventBind extends Component {
                  {/* approach1 in render method */}
                 {/* <button onClick={this.clickHandler.bind(this)} >Click</button> */}
 
-                {/* approach2 */}
-                <button onClick={()=> this.clickHandler()} >Click</button>
+                {/* approach2 using arrow function in rendered method*/}
+                {/* <button onClick={()=> this.clickHandler()} >Click</button> */}
+
+                {/* 3rd approach binding in constructor */}
+                <button onClick={this.clickHandler} >Click</button>
             </div>
         )
     }
