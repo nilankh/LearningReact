@@ -23,8 +23,21 @@ import React from 'react';
 
 
 // destructiing in functional component
-const Greet = ({name, heroname}) => {
+// const Greet = ({name, heroname}) => {
     
+//     return( 
+//         <div>
+//             <h1>
+//                 Hello {name} {heroname}
+//             </h1>
+           
+//         </div>
+//     )
+// }
+
+// destructure in function body 
+const Greet = (props) => {
+    const { name, heroname } = props
     return( 
         <div>
             <h1>
