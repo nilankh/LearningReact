@@ -21,7 +21,10 @@ class Counter extends Component {
 
         // the only place where you can assign this. is the constructor, any other time to change the state setstate method has to be used
 
-        
+        this.setState({
+            count: this.state.count + 1
+        })
+        // console.log(this.state.count);
         
     }
 
