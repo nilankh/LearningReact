@@ -34,7 +34,9 @@ function NameList2() {
 
 
 // peerson(toa isme koi v variable[name] ko use kr skte ho) is  parameter which is passeed as the prop to the person component
-  const personList = persons.map((person) => <Person person={person}/>)
+//   const personList = persons.map((person) => <Person person={person}/>)
+//   isko bina key ke krenge toa warning aayega toa Each child in a list should have a unique "key" prop toa islia neeche wale me hm key pass krenge fir wo warning chala jyga (upar likha hua line v sahi h bs neeche usi ko key ke saath likh rhe h)
+  const personList = persons.map((person) => <Person key={person.id} person={person}/>)
 
   return <div>{personList}</div>;
 }
