@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <NameList2 />
+      <NameList />
       {/* <NameList /> */}
 
       {/* <UserGreeting /> */}
