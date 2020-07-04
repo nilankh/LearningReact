@@ -5,17 +5,22 @@ class UserGreeting extends Component {
     super(props);
 
     this.state = {
-      isLoggedIn: false,
+      isLoggedIn: true,
     };
   }
   // I want to see the message If isLogged in is true then we have to display Welcome nilank otherwise welcome Guest
   render() {
-    // #rd approach Terniary Condtional Operator
-    return this.state.isLoggedIn ? (
-      <div>Welcome Nilank</div>
-    ) : (
-      <div>Welcome Guest</div>
-    );
+
+    // 4th short circuit operator
+    return this.state.isLoggedIn && <div>Welcome Nilank</div>
+
+
+    // // #3rd approach Terniary Condtional Operator
+    // return this.state.isLoggedIn ? (
+    //   <div>Welcome Nilank</div>
+    // ) : (
+    //   <div>Welcome Guest</div>
+    // );
 
     // Second method Elements variables approach
     // let message
