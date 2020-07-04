@@ -5,6 +5,7 @@ function NameList() {
   
 //   3rd way of list rendering
   // const nameList = names.map((name) => <h2>{name}</h2>);
+  // ye changes index as key antipattern 
   const nameList = names.map((name, index) => <h2 key={index}>{index}{name}</h2>);
   return (
     <div>
