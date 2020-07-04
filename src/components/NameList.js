@@ -1,6 +1,6 @@
 import React from "react";
 
-function NamList() {
+function NameList() {
   const names = ["Brue", "Clark", "Diana"];
   
 //   3rd way of list rendering
@@ -26,4 +26,4 @@ function NamList() {
   );
 }
 
-export default NamList;
+export default NameList;
