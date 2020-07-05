@@ -7,7 +7,7 @@ function Stylesheet(props) {
             {/* <h1 className={className}>Style Sheets</h1> */}
             <h1 className={`${className} font-xl`}>Style Sheets</h1>
         </div>
-    )
+    )  
 }
 
 export default Stylesheet
