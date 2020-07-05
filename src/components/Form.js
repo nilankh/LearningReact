@@ -32,7 +32,7 @@ class Form extends Component {
         <div>
             {/* step1 to add element to html */}
             <label>Comments</label>
-            <textarea value={this.state.comments}></textarea>
+            <textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea>
         </div>
       </form>
     );
