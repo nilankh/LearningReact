@@ -27,6 +27,10 @@ class Form extends Component {
             onChange={this.handleUsernameChange}
           />
         </div>
+        <div>
+            <label>Comments</label>
+            <textarea></textarea>
+        </div>
       </form>
     );
   }
