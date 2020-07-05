@@ -12,7 +12,13 @@ class LifecycleA extends Component {
         console.log('LifecycleA constructor');
         
     }
+    // step2
+    static getDerivedStateFromProps(props, state){
+    // this methd get access to props and state as parameters and has to return new state of null
+    console.log('LifecycleA getDerivedStateFromProps');
     
+    return  null;
+}
     render() {
         return (
             <div>
