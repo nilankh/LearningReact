@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LifecycleB from "./LifecycleB";
 
 class LifecycleA extends Component {
   // step1
@@ -28,7 +29,14 @@ class LifecycleA extends Component {
   // then third method is render
   render() {
     console.log("LifeCycleA render");
-    return <div>LifecycleA</div>;
+    return (
+    <div>
+        <div>LifecycleA</div>
+        {/* lifecycleA as the parent component  */}
+        <LifecycleB />
+        {/* lifecycleB is the child component */}
+    </div>
+    )
   }
 }
 
