@@ -16,7 +16,8 @@ import NameList from './components/NameList';
 import NameList2 from './components/NameList2';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
-
+import './appStyles.css' //this is how we import regular css
+import  styles from './appStyles.module.css' // this is how we import module style css
 
 
 function App() {
@@ -24,6 +25,11 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className='error'>Error</h1>
+      {/* but regular style sheet will be work */}
+      <h1 className={styles.success}>Success</h1> 
+      {/* css modules can not be used as child componet */}
+
       <Inline />
       {/* <Stylesheet primary={true} /> */}
       {/* <NameList /> */}
