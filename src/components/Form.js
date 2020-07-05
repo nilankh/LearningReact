@@ -4,20 +4,33 @@ class Form extends Component {
   constructor(props) {
     super(props);
 
-    // Steps2(creating new state compoennts) to convert normal html to react component
+    // Steps2(creating new state compoennts or property) to convert normal html to react component
     this.state = {
       username: "",
-      comments: ''
+      comments: "",
+      topic: 'react',
     };
   }
 
   // event itself passed as a parameter from this event we can extract the value of the input element using event.target.value
   handleUsernameChange = (event) => {
+    //   console.log('event', event.target.value)
     this.setState({
-        username: event.target.value
+      username: event.target.value,
     });
   };
+//   defining method as a class property both up and down and that only
+  handleCommentsChange = (event) => {
+      this.setState({
+          comments: event.target.value,
+      })
+  }
 
+  handleTopicChange = (event) => {
+      this.setState({
+          topic: event.target.valueg
+      })
+  }
   render() {
     return (
       <form>
@@ -27,12 +40,28 @@ class Form extends Component {
             type="text"
             value={this.state.username}
             onChange={this.handleUsernameChange}
+            // step3 assign an unchange handler that updates the state
           />
         </div>
         <div>
-            {/* step1 to add element to html */}
-            <label>Comments</label>
-            <textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea>
+          {/* step1 to add element to html */}
+          <label>Comments</label>
+          <textarea
+            value={this.state.comments}
+            onChange={this.handleCommentsChange}
+          ></textarea>
+        </div>
+
+
+        {/* step1 to add element to html */}
+        <div>
+            <label>Topic</label>
+            <select value={this.state.topic} onChange={this.handleTopicChange}>
+
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="vue">Vue</option>
+            </select>
         </div>
       </form>
     );
