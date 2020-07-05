@@ -28,7 +28,7 @@ class Form extends Component {
 
   handleTopicChange = (event) => {
       this.setState({
-          topic: event.target.valueg
+          topic: event.target.value
       })
   }
   render() {
@@ -63,6 +63,7 @@ class Form extends Component {
                 <option value="vue">Vue</option>
             </select>
         </div>
+        <button type="submit">Submit</button>
       </form>
     );
   }
