@@ -4,8 +4,10 @@ class Form extends Component {
   constructor(props) {
     super(props);
 
+    // Steps2(creating new state compoennts) to convert normal html to react component
     this.state = {
       username: "",
+      comments: ''
     };
   }
 
@@ -28,8 +30,9 @@ class Form extends Component {
           />
         </div>
         <div>
+            {/* step1 to add element to html */}
             <label>Comments</label>
-            <textarea></textarea>
+            <textarea value={this.state.comments}></textarea>
         </div>
       </form>
     );
