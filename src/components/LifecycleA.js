@@ -17,6 +17,14 @@ class LifecycleA extends Component {
 
     return null;
   }
+
+// 4th method
+  componentDidMount() {
+      console.log('LifecycleA ComponentDidMount');
+      
+  }
+  
+
   // then third method is render
   render() {
     console.log("LifeCycleA render");
