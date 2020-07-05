@@ -14,6 +14,7 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import NameList2 from './components/NameList2';
+import Stylesheet from './components/Stylesheet';
 
 
 
@@ -22,8 +23,9 @@ function App() {
 
   return (
     <div className="App">
-      <NameList />
+      <Stylesheet />
       {/* <NameList /> */}
+      {/* <NameList2 /> */}
 
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
