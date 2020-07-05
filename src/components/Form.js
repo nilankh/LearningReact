@@ -2,7 +2,13 @@ import React, { Component } from 'react'
 
 class Form extends Component {
 
+    constructor(props) {
+        super(props)
     
+        this.state = {
+             username: ''
+        }
+    }
     
 
     render() {
@@ -10,7 +16,7 @@ class Form extends Component {
             <form>
                 <div>
                    <label>UserName</label>
-                   <input type='text'  />
+                   <input type='text' value={this.state.username} />
                 </div>
             </form>
         )
