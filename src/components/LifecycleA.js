@@ -24,6 +24,11 @@ class LifecycleA extends Component {
       console.log('LifecycleA ComponentDidMount');
       
   }
+
+  shouldComponentUpdate() {
+    console.log('LifeCycleA shouldComponetUpdate')
+    return true;
+  }
   
 
   // then third method is render
