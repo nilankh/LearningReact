@@ -20,16 +20,17 @@ class LifecycleB extends Component {
     console.log("LifecycleB ComponentDidMount");
   }
 
-
+// updatewala
   shouldComponentUpdate() {
     console.log('LifeCycleB shouldComponetUpdate')
     return true;
   }
-  
+  // updatewala
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('LifeCycleB getsnapshotBeforeUpdate')
+    return null;
   }
-
+// updatewala
   componentDidUpdate() {
     console.log('LifecycleB componentDidUpdate')
   }

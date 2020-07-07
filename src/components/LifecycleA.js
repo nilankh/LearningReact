@@ -33,18 +33,25 @@ class LifecycleA extends Component {
   // updatewala
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('LifeCycleA getsnapshotBeforeUpdate')
+    return null;
   }
 // updatewala
   componentDidUpdate() {
     console.log('LifecycleA componentDidUpdate')
   }
 
+  changeState = () => {
+    this.setState({
+      name: 'Nilank Nikhil'
+    })
+  }
   // then third method is render
   render() {
     console.log("LifeCycleA render");
     return (
     <div>
         <div>LifecycleA</div>
+        <button onClick={this.changeState} >Change state</button>
         {/* lifecycleA as the parent component  */}
         <LifecycleB />
         {/* lifecycleB is the child component */}
