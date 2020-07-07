@@ -28,12 +28,10 @@ function App() {
 
   return (
     <div className="App">
-      <LifecycleA />
+
       
-
-
+      <LifecycleA />
       {/* <Form /> */}
-
       {/* <h1 className='error'>Error</h1> */}
       {/* but regular style sheet will be work */}
       {/* <h1 className={styles.success}>Success</h1>  */}
