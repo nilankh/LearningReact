@@ -25,11 +25,19 @@ class LifecycleA extends Component {
       
   }
 
+  // updatewala
   shouldComponentUpdate() {
     console.log('LifeCycleA shouldComponetUpdate')
     return true;
   }
-  
+  // updatewala
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('LifeCycleA getsnapshotBeforeUpdate')
+  }
+// updatewala
+  componentDidUpdate() {
+    console.log('LifecycleA componentDidUpdate')
+  }
 
   // then third method is render
   render() {
