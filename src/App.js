@@ -20,6 +20,7 @@ import './appStyles.css' //this is how we import regular css
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
 
 // import  styles from './appStyles.module.css' // this is how we import module style css
 // import Form from './components/Form';
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <PureComp />
+      <ParentComp />
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
 
