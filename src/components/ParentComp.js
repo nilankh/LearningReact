@@ -18,6 +18,7 @@ class ParentComp extends Component {
         }, 2000)
     }
     render() {
+        console.log('*********Parent Comp Render')
         return (
             <div>
                 Parent Component 
