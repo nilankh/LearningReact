@@ -22,6 +22,9 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+
 
 // import  styles from './appStyles.module.css' // this is how we import module style css
 // import Form from './components/Form';
@@ -34,7 +37,9 @@ function App() {
 
   return (
     <div className="App">
-      <RefsDemo />
+      <FRParentInput />
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
