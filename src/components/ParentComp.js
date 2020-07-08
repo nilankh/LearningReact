@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, PureComponent } from 'react'
 import RegularComp from './RegularComp'
 import PureComp from './PureComp'
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
     constructor(props) {
         super(props)
     
@@ -18,7 +18,7 @@ class ParentComp extends Component {
         }, 2000)
     }
     render() {
-        console.log('*********Parent Comp Render')
+        console.log('*********Parent Comp Render******************')
         return (
             <div>
                 Parent Component 
