@@ -2,6 +2,7 @@ import React from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 // import  Greet  from './components/Greet';
 // // import { Greet } from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -37,6 +38,7 @@ function App() {
   return (
     <div className="App">
       <ClickCounter />
+      <HoverCounter />
 
       {/* <ErrorBoundary>
         <Hero heroName="Batman" />
