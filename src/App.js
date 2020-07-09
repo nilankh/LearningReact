@@ -41,6 +41,7 @@ function App() {
     <div className="App">
       <Hero heroName="Batman" />
       <Hero heroName="Superman" />
+      <Hero heroName="Joker" />
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
