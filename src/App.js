@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 // import  Greet  from './components/Greet';
 // // import { Greet } from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -25,23 +25,21 @@ import './App.css';
 // import FocusInput from './components/FocusInput';
 // import FRParentInput from './components/FRParentInput';
 // import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero';
-
+import Hero from "./components/Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 // import  styles from './appStyles.module.css' // this is how we import module style css
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
 
-
-
 function App() {
-
-
   return (
     <div className="App">
-      <Hero heroName="Batman" />
-      <Hero heroName="Superman" />
-      <Hero heroName="Joker" />
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+        <Hero heroName="Superman" />
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
@@ -68,7 +66,6 @@ function App() {
 
       {/* <FunctionClick />
       <ClassClick /> */}
-
 
       {/* <Counter /> */}
 
