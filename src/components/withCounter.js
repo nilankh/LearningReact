@@ -3,7 +3,7 @@ import React from "react";
 
 // THe Hoc accepts the original component as its parameter the hoc also returns a new component so within the function body let's create a new component
 // the original component is refereed to as wrapped componet
-const withCounter = (WrappedComponent) => {
+const withCounter = (WrappedComponent, incrementNumber) => {
 //   withComponet replaced NewComponent 
     class WithCounter extends React.Component {
     constructor(props) {
@@ -15,15 +15,20 @@ const withCounter = (WrappedComponent) => {
     }
     incrementCount = () => {
       this.setState((prevState) => {
-        return { count: prevState.count + 1 };
+        return { count: prevState.count + incrementNumber };
       });
     };
     render() {
+        console.log(this.props.name);
+        
       return (
         <WrappedComponent
           count={this.state.count}
           incrementCount={this.incrementCount}
+          {...this.props}
+    
         />
+        // when u create please make sure to pass rest of the props
       );
     }
   }
