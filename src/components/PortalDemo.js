@@ -14,3 +14,5 @@ function PortalDemo() {
 }
 
 export default PortalDemo
+
+// portals se hm index.html me do div ke saath render kr skte h jo ki aise possible ni h, next question is why do we need them
