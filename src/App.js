@@ -16,7 +16,7 @@ import './App.css';
 // import NameList2 from './components/NameList2';
 // import Stylesheet from './components/Stylesheet';
 // import Inline from './components/Inline';
-import './appStyles.css' //this is how we import regular css
+// import './appStyles.css' //this is how we import regular css
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
 // import PureComp from './components/PureComp';
@@ -24,7 +24,8 @@ import './appStyles.css' //this is how we import regular css
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 // import FRParentInput from './components/FRParentInput';
-import PortalDemo from './components/PortalDemo';
+// import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
 
 
 // import  styles from './appStyles.module.css' // this is how we import module style css
@@ -38,7 +39,9 @@ function App() {
 
   return (
     <div className="App">
-      <PortalDemo />
+      <Hero heroName="Batman" />
+      <Hero heroName="Superman" />
+      {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
