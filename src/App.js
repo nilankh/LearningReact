@@ -35,11 +35,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 function App() {
   return (
     <div className="App">
-      {/* <ErrorBoundary> */}
+      <ErrorBoundary>
         <Hero heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
         <Hero heroName="Superman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
         <Hero heroName="Joker" />
-      {/* </ErrorBoundary> */}
+      </ErrorBoundary>
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}

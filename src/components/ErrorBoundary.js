@@ -26,5 +26,5 @@ class ErrorBoundary extends Component {
 }
 
 // hmesha error dikhaea hi q ki react team aisa banaya hi h lekin ek cut button hofa uspe click kroge toa ui pe show krega
-
+// ErrorBoundary will catch the error and display a fallback ui which in our case is text something went wrong
 export default ErrorBoundary
