@@ -1,14 +1,27 @@
 // higher order components(part1)
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class ClickCounter extends Component {
-    render() {
-        return (
-            <div>
-                <button>Click X times</button>
-            </div>
-        )
-    }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+  }
+  incrementCount = () => {
+    this.setState((prevState) => {
+      return { count: prevState.count + 1 };
+    });
+  };
+  render() {
+      const {count} = this.state
+    return (
+      <div>
+        <button onClick={this.incrementCount}>Click {count} times</button>
+      </div>
+    );
+  }
 }
 
-export default ClickCounter
+export default ClickCounter;
