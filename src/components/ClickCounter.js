@@ -5,10 +5,11 @@ import UpdatedComponent from "./withCounter";
 class ClickCounter extends Component {
   
   render() {
-    const { count } = this.state;
+    
+    const { count, incrementCount } = this.props
     return (
       <div>
-        <button onClick={this.incrementCount}>{this.props.name} Click {count} times</button>
+        <button onClick={incrementCount}> Click {count} times</button>
       </div>
     );
   }
