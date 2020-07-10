@@ -42,7 +42,8 @@ function App() {
     <div className="App">
       <ClickCounterTwo />
       <HoverCounter2 />
-      <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} />
+      {/* <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} /> */}
+      <User render={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} />
 
       {/* <ClickCounter name='Nilank' />
       <HoverCounter />  */}
