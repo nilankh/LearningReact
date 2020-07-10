@@ -3,10 +3,10 @@ import React, { Component } from "react";
 
 class HoverCounter2 extends Component {
   render() {
-    const { count } = this.state;
+    const { count, incrementCount } = this.props;
     return (
       <div>
-        <h1 onMouseOver={this.incrementCount}>Hovered {count} times</h1>
+        <h1 onMouseOver={incrementCount}>Hovered {count} times</h1>
       </div>
     );
   }

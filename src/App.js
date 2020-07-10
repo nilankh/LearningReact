@@ -37,13 +37,25 @@ import "./App.css";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounter2 from "./components/HoverCounter2";
 import User from "./components/User";
+import CounterInRenderProps from "./components/CounterInRenderProps";
 function App() {
   return (
     <div className="App">
-      <ClickCounterTwo />
-      <HoverCounter2 />
+      <CounterInRenderProps
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+
+      <CounterInRenderProps
+        render={(count, incrementCount) => (
+          <HoverCounter2 count={count} incrementCount={incrementCount} />
+        )}
+      />
+      {/* <ClickCounterTwo />
+      <HoverCounter2 /> */}
       {/* <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} /> */}
-      <User render={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} />
+      {/* <User render={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} /> */}
 
       {/* <ClickCounter name='Nilank' />
       <HoverCounter />  */}
@@ -57,7 +69,6 @@ function App() {
       <ErrorBoundary>
         <Hero heroName="Joker" />
       </ErrorBoundary> */}
-
 
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}

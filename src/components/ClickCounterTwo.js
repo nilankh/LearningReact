@@ -1,16 +1,15 @@
 // Render props lecture
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class ClickCounterTwo extends Component {
-    
-    render() {
-        const { count } = this.state
-        return (
-            <div>
-                <button onClick={this.incrementCount}>Clicked {count} times</button>
-            </div>
-        )
-    }
+  render() {
+    const { count, incrementCount } = this.props;
+    return (
+      <div>
+        <button onClick={incrementCount}>Clicked {count} times</button>
+      </div>
+    );
+  }
 }
 
-export default ClickCounterTwo
+export default ClickCounterTwo;
