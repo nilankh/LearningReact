@@ -36,11 +36,13 @@ import "./App.css";
 // import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounter2 from "./components/HoverCounter2";
+import User from "./components/User";
 function App() {
   return (
     <div className="App">
       <ClickCounterTwo />
       <HoverCounter2 />
+      <User />
 
       {/* <ClickCounter name='Nilank' />
       <HoverCounter />  */}
