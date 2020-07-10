@@ -42,7 +42,7 @@ function App() {
     <div className="App">
       <ClickCounterTwo />
       <HoverCounter2 />
-      <User />
+      <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} />
 
       {/* <ClickCounter name='Nilank' />
       <HoverCounter />  */}

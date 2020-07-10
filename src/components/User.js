@@ -5,7 +5,7 @@ class User extends Component {
     render() {
         return (
             <div>
-                Nilank
+                {this.props.name(true)}
             </div>
         )
     }
