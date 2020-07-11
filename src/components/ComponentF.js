@@ -4,9 +4,13 @@ import React, { Component } from 'react'
 class ComponentE extends Component {
     render() {
         return (
-            <div>
-                Component F
-            </div>
+            <UserConsumr>
+                {
+                    (username) => {
+                        return <div>Hello {username}</div>
+                    }
+                }
+            </UserConsumr>
         )
     }
 }
