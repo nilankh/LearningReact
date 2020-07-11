@@ -34,18 +34,21 @@ import "./App.css";
 // import LifecycleA from './components/LifecycleA';
 // import ClickCounter from "./components/ClickCounter";
 // import HoverCounter from "./components/HoverCounter";
-import ClickCounterTwo from "./components/ClickCounterTwo";
-import HoverCounter2 from "./components/HoverCounter2";
-import User from "./components/User";
-import CounterInRenderProps from "./components/CounterInRenderProps";
+// import ClickCounterTwo from "./components/ClickCounterTwo";
+// import HoverCounter2 from "./components/HoverCounter2";
+// import User from "./components/User";
+// import CounterInRenderProps from "./components/CounterInRenderProps";
+import ComponentC from './components/ComponentC';
 function App() {
   return (
     <div className="App">
-      <CounterInRenderProps
+      <ComponentC />
+
+      {/* <CounterInRenderProps
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
 
       <CounterInRenderProps
         render={(count, incrementCount) => (
