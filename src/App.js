@@ -38,23 +38,26 @@ import "./App.css";
 // import HoverCounter2 from "./components/HoverCounter2";
 // import User from "./components/User";
 // import CounterInRenderProps from "./components/CounterInRenderProps";
-import ComponentC from './components/ComponentC';
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
+
 function App() {
   return (
     <div className="App">
-      <ComponentC />
-
+      <UserProvider>
+        <ComponentC />
+      </UserProvider>
       {/* <CounterInRenderProps
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
       /> */}
 
-      <CounterInRenderProps
+      {/* <CounterInRenderProps
         render={(count, incrementCount) => (
           <HoverCounter2 count={count} incrementCount={incrementCount} />
         )}
-      /> 
+      />  */}
       {/* <ClickCounterTwo />
       <HoverCounter2 /> */}
       {/* <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} /> */}
