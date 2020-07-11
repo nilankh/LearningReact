@@ -3,10 +3,7 @@ import ComponentE from './ComponentE'
 
 class ComponentC extends Component {
     render() {
-        return (
-            <div>
-                return <ComponentE />
-            </div>
+        return (<ComponentE />
         )
     }
 }
