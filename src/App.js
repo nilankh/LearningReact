@@ -54,7 +54,7 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCounter2 count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> 
       {/* <ClickCounterTwo />
       <HoverCounter2 /> */}
       {/* <User name={ (isLoggedIn) => isLoggedIn ? 'Nilank' : 'Guest'} /> */}
