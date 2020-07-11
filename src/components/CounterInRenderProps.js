@@ -23,5 +23,5 @@ class CounterInRenderProps extends Component {
         )
     }
 }
-
+ 
 export default CounterInRenderProps
