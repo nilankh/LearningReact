@@ -45,9 +45,9 @@ function App() {
   return (
     <div className="App">
       {/* // for step2 we need to provide this user context using the user provided component and the place u provide is important because only the descendant components can consumeit (lecture context part2)*/}
-      <UserProvider value="Nilank">
+      {/* <UserProvider value="Nilank"> */}
         <ComponentC />
-      </UserProvider>
+      {/* </UserProvider> */}
       {/* <CounterInRenderProps
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
