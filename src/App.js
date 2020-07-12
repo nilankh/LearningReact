@@ -48,6 +48,8 @@ function App() {
       {/* <UserProvider value="Nilank"> */}
         <ComponentC />
       {/* </UserProvider> */}
+
+      
       {/* <CounterInRenderProps
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
