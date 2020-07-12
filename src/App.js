@@ -44,7 +44,7 @@ import { UserProvider } from "./components/userContext";
 function App() {
   return (
     <div className="App">
-      {/* step2 include the provider component and provide a value using value attribute this value can be consumed in any of the descendant components (lecture context part2)*/}
+      {/* // for step2 we need to provide this user context using the user provided component and the place u provide is important because only the descendant components can consumeit (lecture context part2)*/}
       <UserProvider value="Nilank">
         <ComponentC />
       </UserProvider>

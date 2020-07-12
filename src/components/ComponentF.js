@@ -9,6 +9,7 @@ class ComponentE extends Component {
 
                     (username) => {
                         return <div>Hello {username}</div>
+                        // we are passing a function as a child to the consumer component, the coonsumner component tells component F hey you need  the user name right let me provide
                     }
                 }
             </UserConsumer>
@@ -17,3 +18,5 @@ class ComponentE extends Component {
 }
 
 export default ComponentE
+
+// final step3 is to consume the user name in the desired component for our demo we need to consume the user name value in component F to consume a context value we need to use consumer component so in component F in render method as part of returtn statement
