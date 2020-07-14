@@ -40,6 +40,7 @@ import React from 'react';
 // destructure in function body 
 const Greet = (props) => {
     const { name, heroname } = props
+    // destructuirng name and heroname property from the props objecct
     return( 
         <div>
             <h1>
