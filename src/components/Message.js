@@ -1,3 +1,4 @@
+// lecture no 10
 // how state can be used in class components
 
 import React, { Component } from 'react';
@@ -22,7 +23,7 @@ class Message extends Component {
         this.setState({
             message:'Thank you for subscribing'
         })
-        // this methods accepts an object which is nothing but new state of the component in the new state all we need is the message to ty for subsribimg
+        // this methods accepts an object which is nothing but new state of the component in the new state all we need is the message to ty for subscribing
     }
 
     render() {

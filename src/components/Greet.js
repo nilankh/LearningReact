@@ -1,3 +1,5 @@
+// first lecture
+
 import React from 'react';
 // Functional component
 
@@ -50,4 +52,7 @@ const Greet = (props) => {
 
 // this is termed as named export
 // export const Greet = () => <h1>Hello Nilank</h1>
+
+
 export default Greet;
+

@@ -40,14 +40,16 @@ import "./App.css";
 // import CounterInRenderProps from "./components/CounterInRenderProps";
 import ComponentC from "./components/ComponentC";
 import { UserProvider } from "./components/userContext";
+import Rough from "./components/Rough";
 
 function App() {
   return (
     <div className="App">
+      <Rough />
       {/* // for step2 we need to provide this user context using the user provided component and the place u provide is important because only the descendant compon ents can consumeit (lecture context part2)*/}
-      <UserProvider value="Nilank">
+      {/* <UserProvider value="Nilank">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
 
 
       {/* <CounterInRenderProps
