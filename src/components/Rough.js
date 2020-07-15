@@ -1,35 +1,49 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Rough extends Component {
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             message: "hello ji"
-        }
-    }
-    // clickHandler() {
-    //     this.setState({
-    //         message: 'Chalo by beta'
-    //     })
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoggedIn: true,
+    };
+  }
+
+  render() {
         
+    return this.state.isLoggedIn && <div>Welcome Nilank</div>
+
+
+    // return this.state.isLoggedIn ? (
+    //   <div>welocme Nilank</div>
+    // ) : (
+    //   <div>welocme Guest</div>
+    // );
+
+
+
+
+
+
+
+    // let message;
+    // if(this.state.isLoggedIn) {
+    //     message = <div>Welcome Nilank</div>
+    // }else{
+    //     message = <div>Welcome Guests</div>
     // }
-    clickHandler = () => {
-        this.setState({
-            message: 'Chalo by beta'
-        })
-        
-    }
-    render() {
-        return (
-            <div>
-                <div>{this.state.message}</div>
-                {/* <button onClick={this.clickHandler.bind(this)}>Click kro na</button> */}
-                {/* <button onClick={() => this.clickHandler()}>Click</button> */}
-                <button onClick={this.clickHandler}>Click</button>
-            </div>
-        )
-    }
+    // return <div>{message}</div>
+
+
+
+
+
+    // if (this.state.isLoggedIn) {
+    //   return <div>Welcome nilank</div>;
+    // } else {
+    //   return <div>welcome guest</div>;
+    // }
+  }
 }
 
-export default Rough
+export default Rough;
