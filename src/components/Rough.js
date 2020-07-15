@@ -5,19 +5,28 @@ class Rough extends Component {
         super(props)
     
         this.state = {
-             count: 0
+             message: "hello ji"
         }
     }
-    increment() {
+    // clickHandler() {
+    //     this.setState({
+    //         message: 'Chalo by beta'
+    //     })
+        
+    // }
+    clickHandler = () => {
         this.setState({
-            count: this.state.count + 1
+            message: 'Chalo by beta'
         })
+        
     }
     render() {
         return (
             <div>
-                <div>count- {this.state.count}</div>
-                <button onClick={() => this.increment()}>Increment</button>
+                <div>{this.state.message}</div>
+                {/* <button onClick={this.clickHandler.bind(this)}>Click kro na</button> */}
+                {/* <button onClick={() => this.clickHandler()}>Click</button> */}
+                <button onClick={this.clickHandler}>Click</button>
             </div>
         )
     }
