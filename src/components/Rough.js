@@ -1,49 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Rough extends Component {
-  constructor(props) {
-    super(props);
+function Rough() {
+  const names = ["Ajay kumar", "Mala Sinha", "Nilank Nikhil"];
 
-    this.state = {
-      isLoggedIn: true,
-    };
-  }
+  // 3rdway
+  const nameList = names.map((name, index) => <h2>{name}</h2>);
+  return (
+    <div>
+      {/* 1st way */}
+      {/* <h2>{names[0]}</h2>
+      <h2>{names[1]}</h2>
+      <h2>{names[2]}</h2> */}
 
-  render() {
-        
-    return this.state.isLoggedIn && <div>Welcome Nilank</div>
+      {/* 2nd way */}
+      {/* {
+        names.map(names => <h2>{names}</h2>)
+      } */}
 
-
-    // return this.state.isLoggedIn ? (
-    //   <div>welocme Nilank</div>
-    // ) : (
-    //   <div>welocme Guest</div>
-    // );
-
-
-
-
-
-
-
-    // let message;
-    // if(this.state.isLoggedIn) {
-    //     message = <div>Welcome Nilank</div>
-    // }else{
-    //     message = <div>Welcome Guests</div>
-    // }
-    // return <div>{message}</div>
-
-
-
-
-
-    // if (this.state.isLoggedIn) {
-    //   return <div>Welcome nilank</div>;
-    // } else {
-    //   return <div>welcome guest</div>;
-    // }
-  }
+      {/* 3rd way */}
+      {nameList}
+    </div>
+  );
 }
 
 export default Rough;
