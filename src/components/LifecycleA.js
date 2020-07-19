@@ -13,7 +13,7 @@ class LifecycleA extends Component {
   }
   // step2
   static getDerivedStateFromProps(props, state) {
-    // this methd get access to props and state as parameters and has to return new state of null
+    // this methd get access to props and state as parameters and has to return new state or null
     console.log("LifecycleA getDerivedStateFromProps");
 
     return null;
