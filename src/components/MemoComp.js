@@ -1,3 +1,4 @@
+// Lecture 27
 import React from 'react'
 
 function MemoComp({name}) {

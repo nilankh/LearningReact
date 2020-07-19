@@ -1,3 +1,5 @@
+// Leccture26 pure components
+
 import React, { PureComponent } from 'react'
 
 class PureComp extends PureComponent {

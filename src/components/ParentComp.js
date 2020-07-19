@@ -1,3 +1,4 @@
+// Leccture26 pure components and lecture 27
 // import React, { Component, PureComponent } from 'react'
 import React, { Component } from 'react'
 import RegularComp from './RegularComp'

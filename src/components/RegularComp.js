@@ -1,3 +1,4 @@
+// Leccture26 pure components
 import React, { Component } from 'react'
 
 class RegularComp extends Component {
