@@ -1,4 +1,4 @@
-// forwarding refs
+// Forwarding Refs lecture 30
 // in this we will use forwarding ref technique to allow the parent component to directly reference the native element
 // we have four simple steps
 import React, { Component } from 'react'
