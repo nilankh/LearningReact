@@ -1,3 +1,4 @@
+// LECTURE32 Error handling phase methods
 import React, { Component } from 'react'
 
 class ErrorBoundary extends Component {

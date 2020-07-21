@@ -1,4 +1,4 @@
-// Error handling phase methods
+// LECTURE32 Error handling phase methods
 import React from 'react'
 
 function Hero({heroName}) {
