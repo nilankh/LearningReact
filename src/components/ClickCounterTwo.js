@@ -1,4 +1,4 @@
-// Render props lecture
+// LECTURE36 Render props lecture(PART1)
 import React, { Component } from "react";
 
 class ClickCounterTwo extends Component {
