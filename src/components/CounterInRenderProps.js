@@ -1,4 +1,4 @@
-// renderprops part2
+//LECTURE37 renderprops part2
 
 import React, { Component } from 'react'
 
