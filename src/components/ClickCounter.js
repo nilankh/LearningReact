@@ -1,4 +1,4 @@
-// higher order components(part1)
+// LECTURE33 higher order components(part1)
 import React, { Component } from "react";
 
 import withCounter from "./withCounter";
