@@ -12,7 +12,7 @@ import React from 'react';
 // const Greet = (props) => {
 //     console.log("props",props);
 //     //  props.name = 'Neel'
-//     // we can assign anything to props because props are immutuable
+//     // we can not assign anything to props because props are immutuable
 //     return( 
 //         <div>
 //             <h1>
