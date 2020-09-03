@@ -14,6 +14,7 @@ class Message extends Component {
         super()//this is required because we extended reacts component class and call has to be made to the base class constructor and then we create our state object
         this.state = {
             message: 'Welcome Visitor'
+            // initialised property
 
         }
     }
