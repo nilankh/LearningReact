@@ -6,6 +6,8 @@ import React from "react";
 // const UserContext = React.createContext()
 // you can set default values to your context and default value is set while creating a context
 const UserContext = React.createContext("Codevolution");
+
+
 // it comes with two thing first is Provider and second is consumer
 
 const UserProvider = UserContext.Provider;
