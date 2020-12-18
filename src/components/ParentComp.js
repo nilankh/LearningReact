@@ -14,6 +14,7 @@ class ParentComp extends Component {
              name: 'Nilank'
         }
     }
+
     
     componentDidMount() {
         setInterval(() => {
