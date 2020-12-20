@@ -10,6 +10,7 @@ class RegularComp extends Component {
             </div>
         )
     }
+    
 }
 
 export default RegularComp
