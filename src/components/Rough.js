@@ -4,6 +4,7 @@ class Rough extends Component {
   constructor(props) {
     super(props);
 
+    
     this.state = {
       username: "",
       comments: "",
@@ -22,9 +23,9 @@ class Rough extends Component {
     });
   };
   handleSubmit = (event) => {
-    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
-    event.preventDefault()
-  }
+    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+    event.preventDefault();
+  };
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
