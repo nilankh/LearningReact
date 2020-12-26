@@ -6,6 +6,7 @@ class Rough extends Component {
 
     
     
+    
     this.state = {
       username: "",
       comments: "",
